@@ -1,0 +1,399 @@
+/* 초기화 */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Circular,-apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif
+}
+
+#main-page {
+   background: url(img/bg.jpg) no-repeat center;
+   background-size: cover;
+   height: 75vh;
+   
+}
+.main-navi {
+   position: sticky;
+   top: 0;
+   background-color: white;
+   padding: 0px 80px;
+   display: flex;
+   justify-content: space-between;
+   height: 80px;
+   align-items: center;
+}
+
+.main-navi .logo {
+   height: 80px;
+   display: flex;
+   align-items: center;
+}
+
+.logo a {
+   text-decoration: none;
+   color: #ff385c;
+   font-size: 1.5rem;
+   font-weight: 900;
+   padding-bottom: 7px;
+   
+}
+
+.logo i {
+   font-size: 40px;
+   position: relative;
+   top: 6px;
+}
+
+.main-navi .search .button {
+   width: 300px;
+   height: 48px;
+   border-radius: 30px;
+   background-color: white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 15px;
+   cursor: pointer;
+   border: 1px solid #ddd;
+   outline: none;
+   font-weight: 700;
+}
+
+.main-navi .search .button .rbutton {
+background-color: #ff385c;
+color: white;
+border-radius: 50%;
+padding: 5px 7px;
+}
+
+.main-navi .search .button:hover {
+box-shadow: rgba(0,0,0,0.15) 0px 2px 8px;
+}
+
+.main-navi .search .button .rbutton i {
+font-size: 10px;
+}
+
+.main-navi .menu {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.main-navi .menu .item {
+   font-weight: 600;
+   margin: 0 5px;
+   padding: 10px 15px;
+}
+
+.main-navi .menu .item:hover {
+   background-color: rgba(0, 0, 0, 0.05);
+   border-radius: 20px;
+   cursor: pointer;
+}
+.main-navi .menu button {
+   margin: 10px;
+   width: 70px;
+   height: 36px;
+   background-color: white;
+   border: 1px solid #ddd;
+   border-radius: 30px;
+}
+
+.main-navi .menu .setting:hover {
+   box-shadow: rgba(206, 198, 198, 0.5) 0px 2px 8px;
+   cursor: pointer;
+}
+
+.main-navi .menu button i {
+   padding: 5px;
+   font-size: 20px;
+}
+
+.sentence {
+   position: absolute;
+   top: 35%;
+    left: 150px;
+   color: #ffffff;
+   font-size: 52px;
+   font-weight: 900;
+   line-height: 3.5rem;
+}
+
+.sentence a {
+   text-decoration: none;
+   color: #222222;
+}
+.sentence .a-sentence {
+   background-color: white;
+   border: 1px solid white;
+   border-radius: 8px;
+   margin: 22px 0px 0px;
+   padding: 7px 15px;
+   cursor: pointer;
+   font-weight: 900;
+   font-size: 14px; 
+}
+
+.city-grid {
+   display: grid;
+   justify-content: space-around;
+   padding: 50px 80px;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 20px;
+}
+
+.city-grid div {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+.city-grid a{
+   text-decoration: none;
+   color: black;
+}
+.city-grid div img {
+   border-radius: 8px;
+   margin-right: 15px;
+}
+
+.container {
+   margin: 40px 0px;
+   padding: 0px 80px;
+}
+
+.container .sentence2 {
+   padding: 0px 0px 16px;
+}
+
+.container .sentence2 .sentence2-1 {
+   font-size: 32px;
+   font-weight: 900;
+}
+.container .house {
+   display: flex;
+   flex: 1;
+   padding-top: 10px;
+   padding-bottom: 50px;
+   margin-bottom: 40px;
+   gap: 15px;
+   list-style: none;
+}
+
+.container .house a {
+   text-decoration: none;
+   color: #222222;
+}
+
+.container .house img {
+   border-radius: 8px;
+   width: 100%;
+   height: 100%;
+}
+
+.container .house div {
+   font-size: 18px;
+   font-weight: 600;
+   padding: 8px 0px 0px;
+}
+
+#main-page2 {
+   background-color: black;
+   padding: 0px 80px;
+   height: 77vh;
+}
+
+.container2 .sentence3 {
+   padding-top: 30px;
+}
+.container2 .sentence3 .sentence3-1 {
+   color: #ffffff;
+   font-size: 32px;
+}
+
+.container2 .sentence3 span {
+   color: #ffffff;
+   font-size: 14px;
+}
+
+.container2 .experience {
+   display: flex;
+   padding-top: 10px;
+   gap: 15px;
+   list-style: none;
+}
+
+.container2 .experience a{
+   text-decoration: none;
+   color: #ffffff;
+}
+
+.container2 .experience img {
+   border-radius: 8px;
+   width: 100%;
+   height: 55vh;
+}
+
+.container2 .experience div {
+   font-size: 18px;
+   font-weight: 600;
+   padding: 8px 0px 0px;
+}
+
+.container2 .experience .exp {
+   color: #ffffff;
+   font-size: 14px;
+   margin: 4px 0px 0px;
+}
+
+.container3 {
+   margin-top: 40px;
+   padding: 0px 80px;
+   margin-bottom: 70px;
+}
+
+.container3 .sentence4-1 {
+   color: #222222;
+   font-size: 32px;
+   padding: 0px 0px 16px;
+}
+
+.container3 .host {
+   display: flex;
+   padding-top: 10px;
+   gap: 15px;
+   list-style: none;
+}
+
+.container3 .host a {
+   text-decoration: none;
+   color: #222222;
+}
+
+.container3 .host img {
+   border-radius: 8px;
+   width: 100%;
+   height: 40vh;
+}
+
+.container3 .host div {
+   font-size: 18px;
+   font-weight: 550;
+   padding: 8px 0px 0px;
+}
+
+#main-page3 {
+   padding: 0px 80px;
+   border-top: 1px solid rgb(214, 222, 230);
+   background-color: rgb(249, 250, 250);
+}
+
+.container4 {
+   padding: 48px 80px;
+}
+
+.container4 .info {
+   display:  flex;
+   margin: 0px -12px;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.container4 .info ul {
+   padding: 0px 12px;
+   list-style: none;
+   font-size: 12px;
+   
+}
+
+.container4 .info ul li {
+   margin:  16px 0px 0px;
+   font-size: 14px;
+}
+
+.container4 .info ul a {
+   text-decoration: none;
+   color: #222222;
+}
+
+.container4 .info ul a:hover {
+color: lightslategray;
+text-decoration: underline lightslategray;
+}
+
+
+.bottom {
+   border-top: 1px solid rgb(214, 222, 230);
+   padding: 24px 0px;
+   font-size: 14px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+
+.bottom .sentence5 {
+   margin: 0px 19px 0px 0px;
+   color: #222222;
+}
+
+.bottom .sentence5 a {
+   text-decoration: none;
+   color: #222222;
+}
+
+.bottom .sentence5 span {
+   padding: 0px 2px;
+   color: #484848;
+}
+
+.bottom .kr-icon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.bottom .kr-icon .kr span {
+   font-size: 14px;
+   text-decoration: underline;
+   margin: 0px 20px 0px 0px;
+   color: #222222;
+   font-weight: 600;
+}
+.bottom .kr-icon .kr i {
+   font-size: 16px;
+   margin: 0px 8px 0px 0px;
+}
+
+.bottom .kr-icon .kr .money {
+   text-decoration: none;
+   margin: 0px 8px 0px 0px;
+   font-weight: 500;
+   font-size: 15px;
+}
+
+.bottom .kr-icon .kr a {
+   color: #222222;
+   text-decoration: none;
+}
+
+.bottom .kr-icon .icon {
+   margin: 0px 0px 0px 12px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.bottom .kr-icon .icon i {
+   font-size: 18px;
+   margin: 10px;
+}
+
+.bottom .kr-icon .icon a {
+   color: #222222;
+   text-decoration: none;
+}
